@@ -15,4 +15,6 @@ RUN cd /tmp && \
     git checkout "$tag" && \
     mv git-ftp /usr/local/bin && chmod +x /usr/local/bin
 
+WORKDIR /repo
+
 CMD ["/bin/sh"]
